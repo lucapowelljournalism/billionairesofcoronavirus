@@ -23,6 +23,11 @@ html, body {
     font-size: 16px;
 }
 
+p {
+    font-size: 48px;
+    z-index: 3;
+}
+
 .container {
     max-width: 800px;
     width: 100%;
@@ -30,8 +35,8 @@ html, body {
 }
 
 .billionaires {
+    height: 400px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -63,6 +68,13 @@ html, body {
     top: 200px;
 }
 
+#clear p {
+    font-size: 18px;
+    position: relative;
+    right: 20px;
+    z-index: 1;
+}
+
 .tile {
     display: inline-block;
     padding: 20px;
@@ -84,28 +96,6 @@ html, body {
     transition: opacity 1s ease-in-out;
 }
 
-.tile .inner .content {
-    top: 50%;
-    transform: translateY(-50%);
-    position: absolute;
-    width: 100%;
-    padding: 5px;
-}
-
-.tile .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    text-decoration: none;
-    color: #FFF;
-}
-
-.tile .close:after {
-    font-family: FontAwesome;
-    font-size: 1.5em;
-    content: "\f00d";
-}
-
 .tile img {
     max-width: 150px;
     width: 100%;
@@ -114,8 +104,6 @@ html, body {
 }
 
 .tile.active {
-    left: 0;
-    top: 0;
     width: 100%;
     height: 100%;
     border-radius: 0;
@@ -125,6 +113,34 @@ html, body {
 
 .tile.active .inner {
     opacity: 1;
+}
+
+.jackmaoutput {
+    opacity: 0;
+}
+
+.jackmaoutput.active {
+    opacity: 1;
+}
+
+.billgatesoutput {
+    opacity: 0;
+}
+
+.billgatesoutput.active {
+    opacity: 1;
+}
+
+.jeffbezosoutput {
+    opacity: 0;
+}
+
+.jeffbezosoutput.active {
+    opacity: 1;
+}
+
+.output {
+    position: absolute;
 }
 
 /*********************************************************************
