@@ -28,44 +28,30 @@ p {
     z-index: 3;
 }
 
+h1 {
+    font-size: 4em;
+}
+
 .container {
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
 }
 
+.introtext p {
+    padding: 10px;
+    font-size: 24px;
+    line-height: 1.5em;
+}
+
 .billionaires {
-    height: 400px;
+    height: 600px;
     display: flex;
     justify-content: center;
 }
 
 .header {
     text-align: center;
-}
-
-#jackma {
-    top: 200px;
-}
-
-#billgates {
-    top: 125px;
-}
-
-#jeffbezos {
-    top: 50px;
-}
-
-#charleskoch {
-    top: 50px;
-}
-
-#larryellison {
-    top: 125px;
-}
-
-#zuckerberg {
-    top: 200px;
 }
 
 #clear p {
@@ -87,15 +73,6 @@ p {
     cursor: pointer;
 }
 
-.tile .inner {
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    text-align: center;
-    position: absolute;
-    transition: opacity 1s ease-in-out;
-}
-
 .tile img {
     max-width: 150px;
     width: 100%;
@@ -103,44 +80,64 @@ p {
     display: inline-block;
 }
 
-.tile.active {
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
-    border: 0;
-    z-index: 2;
-}
-
-.tile.active .inner {
-    opacity: 1;
-}
-
-.jackmaoutput {
-    opacity: 0;
-}
-
-.jackmaoutput.active {
-    opacity: 1;
-}
-
-.billgatesoutput {
-    opacity: 0;
-}
-
-.billgatesoutput.active {
-    opacity: 1;
-}
-
-.jeffbezosoutput {
-    opacity: 0;
-}
-
-.jeffbezosoutput.active {
-    opacity: 1;
-}
-
 .output {
+    opacity: 0;
     position: absolute;
+    border-style: solid;
+    border-radius: 2px;
+    padding: 10px;
+    text-align: center;
+    background-color: #B5D3E7;
+}
+
+.minititle {
+    font-size: 3em;
+}
+
+.subheading {
+    font-size: 1.5em;
+}
+
+.content {
+    font-size: 1em;
+}
+
+.active {
+    opacity: 1;
+}
+
+#tile1 {
+    top: 300px;
+}
+
+#tile2 {
+    top: 180px;
+}
+
+#tile3 {
+    top: 90px;
+}
+
+#tile4 {
+    top: 45px;
+}
+
+#tile5 {
+    top: 90px;
+}
+
+#tile6 {
+    top: 180px;
+}
+
+#tile7 {
+    top: 300px;
+}
+
+.bodytext p {
+    padding: 10px;
+    font-size: 24px;
+    line-height: 1.5em;
 }
 
 /*********************************************************************

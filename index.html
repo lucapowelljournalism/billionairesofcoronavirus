@@ -24,69 +24,111 @@
   </head>
 
   <body>
-    <!-- YOUR CONTENT GOES HERE -->
     <div class="header">
-      <h1 class="title"> Coronavirus billionaires</h1>
-      <h2 class="subtitle"> How did billionaires use their fortunes in response to the global coronavirus pandemic?</h2>
-    </div>
-
-    <div class="billionaires">
-
-      <div class="tile" id="jackma">
-        <img id="jackma" src="jackma.jpg">
-        <div class="inner">
-          <a class="close" href="#"></a>
-          <div class="content">
-          </div>
-        </div>
-      </div>
-
-      <div class="tile" id="billgates">
-        <img id="billgates" src="billgates.jpg">
-      </div>
-
-      <div class="tile" id="jeffbezos">
-        <img id="jeffbezos" src="bezos.jpg">
-      </div>
-
-      <div class="tile" id="bloomberg">
-        <img id="bloomberg" src="bloomberg.jpg">
-      </div>
-
-      <div class="tile" id="charleskoch">
-        <img id="charleskoch" src="charleskoch.jpg">
-      </div>
-
-      <div class="tile" id="larryellison">
-        <img id="larryellison" src="larryellison.jpg">
-      </div>
-
-      <div class="tile" id="zuckerberg">
-        <img id="zuckerberg" src="zuckerberg.jpg">
-      </div>
-
-      <div class="tile" id="clear">
-        <p id="clear">Clear</p>
-      </div>
+      <h1 class="title"> Coronavirus Billionaires</h1>
+      <h3 class="subtitle"> How did billionaires use their fortunes in response to the global coronavirus pandemic?</h3>
 
     </div>
 
+    <div class="container introtext">
+      <p>Here's a couple hundred words you'll probably skip over, but are necessary before any interactive.</p>
+      <p>Click on the billionaires below to see how they reacted to the coronavirus pandemic.</p>
+    </div>
 
+    <div class=" billionaires">
 
-    <div class="container display">
-
-      <div class="container output jackmaoutput">
-        <p>Jack Ma did this, this and this.</p>
+      <div class="tile" id="tile1" data-target="#jackma">
+        <img data-target="#jackma" src="jackma.jpg">
       </div>
 
-      <div class="container output billgatesoutput">
-        <p>Bill Gates did this, this and this.
+      <div class="tile" id="tile2" data-target="#billgates">
+        <img data-target="#billgates" src="billgates.jpg">
       </div>
 
-      <div class="container output jeffbezosoutput">
-        <p>Jeff Bezos did this, this and this.
+      <div class="tile" id="tile3" data-target="#jeffbezos">
+        <img data-target="#jeffbezos" src="bezos.jpg">
       </div>
 
+      <div class="tile" id="tile4" data-target="#bloomberg">
+        <img data-target="#bloomberg" src="bloomberg.jpg">
+      </div>
+
+      <div class="tile" id="tile5" data-target="#charleskoch">
+        <img data-target="#charleskoch" src="charleskoch.jpg">
+      </div>
+
+      <div class="tile" id="tile6" data-target="larryellison">
+        <img data-target="#larryellison" src="larryellison.jpg">
+      </div>
+
+      <div class="tile" id="tile7" data-target="#zuckerberg">
+        <img data-target="#zuckerberg" src="zuckerberg.jpg">
+      </div>
+
+      <div class="tile" id="clear" data-target="#clear">
+        <p data-target="#clear">Clear</p>
+        <!--Clear gets no output container below. When clicked, it simply triggers the removeClass standard to all clicks in the jscript.-->
+      </div>
+
+    </div>
+    <!--closes the div with all the billionaires headshots-->
+
+    <div class="container">
+      <!--Space for each individiual billionaire's story-->
+
+      <div class="container output" id="jackma">
+        <p class="minititle">Jack Ma</p>
+        <p class="subheading">Mr. Superhero</p>
+        <!--output div, identified in Jscript by #jackma-->
+        <p class="content">Jack Ma gave a bunch of money. Good guy!</p>
+      </div>
+
+      <div class="container output" id="billgates">
+        <p class="minititle">Bill Gates</p>
+        <p class="subheading">Mr. I'm trying to save you people.</p>
+        <p class="content">Bill Gates gave a lot, lot of money. As usual. Also, he didn't engineer coronavirus to kill off half the planet, contrary to popular internet belief.</p>
+      </div>
+
+      <div class="container output" id="jeffbezos">
+        <p class="minititle">Jeff Bezos</p>
+        <p class="subheading">Mr. How can this make me richer?</p>
+        <p class="content">Jeff Bezos gave money, but also managed to come off as more evil by treating Amazon workers poorly.</p>
+      </div>
+
+      <div class="container output" id="bloomberg">
+        <p class="minititle">Michael Bloomberg</p>
+        <p class="subheading">Mr. Slightly less rich horrible person.</p>
+        <p class="content">Michael Bloomberg disappeared after talking about how he'd do 'whatever it takes' to...get himself elected.</p>
+      </div>
+
+      <div class="container output" id="charleskoch">
+        <p class="minititle">Charles Koch</p>
+        <p class="subheading">Mr. You-No-Stay-At-Home</p>
+        <p class="content">Charles Koch fought against Stay At Home orders through his various nonprofits.</p>
+      </div>
+
+      <div class="container output" id="larryellison">
+        <p class="minititle">Larry Ellison</p>
+        <p class="subheading">Mr. Doctor? No, nope, never.</p>
+        <p class="content">Larry Ellison hopped on to the Hydroxichloroquine crazy bus with Trump. </p>
+      </div>
+
+      <div class="container output" id="zuckerberg">
+        <p class="minititle">Mark Zuckerberg</p>
+        <p class="subheading">Mr. Trying to be the good guy.</p>
+        <p class="content">Mark Zuckerberg worked with Bill Gates and came off surprisingly well, for once.</p>
+      </div>
+
+    </div>
+
+    <div class="container bodytext">
+      <p>
+        <p>
+          <p><br><br><br><br>
+            <p>Here's text that goes into what you can probably already see for yourself through the interactive above.</p>
+            <p>If you didn't want to do the clicking, then this text is for you!</p>
+            <p>This person did this notable thing. Also this one said this crazy thing. And generally, don't you wish you were a billionaire, after reading this?</p>
+            <p>To get inspired and less sad about how poor you are, check out some of our other interactives in this project. Cheers :)</p>
     </div>
 
   </body>
