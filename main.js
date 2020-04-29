@@ -5,7 +5,7 @@ $("body").on("click", ".tile", function (e) {
 	const target = $(click_face).data("target"); // "gets data attribute #(variablename) from click face."
 	console.log(target) //prints out #jackma
 
-	$(".output.active").removeClass("active"); //hide any text that's showing
+	$(".output.active").removeClass("active"); //hide any text that was showing from a prior billionaire
 	$(target).addClass("active"); //show this text
 
 });

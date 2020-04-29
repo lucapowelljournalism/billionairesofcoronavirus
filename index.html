@@ -24,10 +24,8 @@
   </head>
 
   <body>
-    <div class="header">
-      <h1 class="title"> Coronavirus Billionaires</h1>
-      <h3 class="subtitle"> How did billionaires use their fortunes in response to the global coronavirus pandemic?</h3>
-
+    <div class="container header">
+      <h1 class="title"> Billionaires of the Pandemic</h1>
     </div>
 
     <div class="container introtext">
@@ -65,10 +63,11 @@
         <img data-target="#zuckerberg" src="zuckerberg.jpg">
       </div>
 
-      <div class="tile" id="clear" data-target="#clear">
+      <!--<div class="tile" id="clear" data-target="#clear">
         <p data-target="#clear">Clear</p>
         <!--Clear gets no output container below. When clicked, it simply triggers the removeClass standard to all clicks in the jscript.-->
-      </div>
+      <!--</div>-->
+
 
     </div>
     <!--closes the div with all the billionaires headshots-->
@@ -79,6 +78,7 @@
       <div class="container output" id="jackma">
         <p class="minititle">Jack Ma</p>
         <p class="subheading">Mr. Superhero</p>
+        <img data-target="#jackma" src="jackma.jpg">
         <!--output div, identified in Jscript by #jackma-->
         <p class="content">Jack Ma gave a bunch of money. Good guy!</p>
       </div>
@@ -86,49 +86,76 @@
       <div class="container output" id="billgates">
         <p class="minititle">Bill Gates</p>
         <p class="subheading">Mr. I'm trying to save you people.</p>
+        <img data-target="#billgates" src="billgates.jpg">
+
         <p class="content">Bill Gates gave a lot, lot of money. As usual. Also, he didn't engineer coronavirus to kill off half the planet, contrary to popular internet belief.</p>
       </div>
 
       <div class="container output" id="jeffbezos">
         <p class="minititle">Jeff Bezos</p>
         <p class="subheading">Mr. How can this make me richer?</p>
+        <img data-target="#jeffbezos" src="bezos.jpg">
         <p class="content">Jeff Bezos gave money, but also managed to come off as more evil by treating Amazon workers poorly.</p>
       </div>
 
       <div class="container output" id="bloomberg">
         <p class="minititle">Michael Bloomberg</p>
-        <p class="subheading">Mr. Slightly less rich horrible person.</p>
+        <p class="subheading">Mr. "Guys, remember when I was running for President? No? Good.""</p>
+        <img data-target="#bloomberg" src="bloomberg.jpg">
         <p class="content">Michael Bloomberg disappeared after talking about how he'd do 'whatever it takes' to...get himself elected.</p>
       </div>
 
       <div class="container output" id="charleskoch">
         <p class="minititle">Charles Koch</p>
         <p class="subheading">Mr. You-No-Stay-At-Home</p>
-        <p class="content">Charles Koch fought against Stay At Home orders through his various nonprofits.</p>
+        <img src="charleskoch.jpg">
+        <p class="content">Who was the most surprised by an international pandemic?<br><br>
+
+          Charles Koch would be a safe bet, if only because the man has spent so long trying to defund the CDC. In 2018, Koch’s Americans For Prosperity lobbied for $1 billion in cuts to the CDC. They argued the organization's funding had grown
+          significantly in 15 years, and that its public health services were ‘duplicative’.<br><br>
+
+          When Covid-19 hit, the AFP then began advocating against stay-at-home orders across the country. In several statements, the group called the orders the “wrong approach” and that “all businesses are essential.” That advice contradicts
+          medical experts at the top, and yet despite that, some say that languages has found a receptive ear in the president. Trump has also publicly toyed with the idea of reopening.<br><br>
+
+          At a net worth of 40 billion, Charles Koch’s influence is massive. The AFP is just one arm of his network that is mixed up in the coronavirus response. Koch industries employs over 130,000 workers. Koch also owns Georgia-Pacific, a
+          toilet-paper producer - sorry, “bath tissue” - among other things. It also owns Phillips Medisize, a medical device producer that makes test kits. In a statement, the company said they would be ‘transforming production lines in order to
+          meet the growing demand for life saving medical devices.”<br><br>
+
+          So Koch is either innovating his way through an economic collapse, or simply positioning himself to hold all the cards when the federal demand for test kits soars.<br><br>
+
+          One of Koch’s orgs, Stand Together, has announced that they are donating a total of $5 million dollars directly to families in sums of $500 each. It’s also donating over $5 million to community-based nonprofits.<br><br>
+
+          Notably, a small amount of that pot has come from Koch’s own coffers. Most of it is raised publicly.<br><br>
+
+          Recently, the AFP has broken with former tea-party groups who’ve supported shutdown protests across the country. The decision not to take part in shutdown protests was notable. Americans for Prosperity CEO Emily Seidel said she “did not
+          believe rejecting the advice of public health experts made sense.”<br><br>
+
+          The same health experts Koch has long tried to defund.<br><br>
+        </p>
       </div>
 
       <div class="container output" id="larryellison">
         <p class="minititle">Larry Ellison</p>
         <p class="subheading">Mr. Doctor? No, nope, never.</p>
+        <img data-target="#larryellison" src="larryellison.jpg">
         <p class="content">Larry Ellison hopped on to the Hydroxichloroquine crazy bus with Trump. </p>
       </div>
 
       <div class="container output" id="zuckerberg">
         <p class="minititle">Mark Zuckerberg</p>
         <p class="subheading">Mr. Trying to be the good guy.</p>
+        <img data-target="#zuckerberg" src="zuckerberg.jpg">
         <p class="content">Mark Zuckerberg worked with Bill Gates and came off surprisingly well, for once.</p>
       </div>
 
     </div>
 
     <div class="container bodytext">
-      <p>
-        <p>
-          <p><br><br><br><br>
-            <p>Here's text that goes into what you can probably already see for yourself through the interactive above.</p>
-            <p>If you didn't want to do the clicking, then this text is for you!</p>
-            <p>This person did this notable thing. Also this one said this crazy thing. And generally, don't you wish you were a billionaire, after reading this?</p>
-            <p>To get inspired and less sad about how poor you are, check out some of our other interactives in this project. Cheers :)</p>
+      <h2>Overview</h2>
+      <p>Here's text that goes into what you can probably already see for yourself through the interactive above.</p>
+      <p>If you didn't want to do the clicking, then this text is for you!</p>
+      <p>This person did this notable thing. Also this one said this crazy thing. And generally, don't you wish you were a billionaire, after reading this?</p>
+      <p>To get inspired and less sad about how poor you are, check out some of our other interactives in this project. Cheers :)</p>
     </div>
 
   </body>
