@@ -24,127 +24,131 @@
   </head>
 
   <body>
-    <div class="container header">
-      <h1 class="title"> Billionaires of the Pandemic</h1>
+    <div class="ribbon">
+      <div class="container header">
+        <h1 class="title"> Billionaires of the Pandemic</h1>
+      </div>
+
+      <div class="container introtext">
+        <p>Here's a couple hundred words you'll probably skip over, but are necessary before any interactive.</p>
+        <p>Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It's also called placeholder (or filler) text. It's a convenient tool for mock-ups. It
+          helps to outline the visual elements of a document or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by the classical author and philosopher Cicero. Its words and letters have been changed by
+          addition or removal, so to deliberately render its content nonsensical; it's not genuine, correct, or comprehensible Latin anymore. While lorem ipsum's still resembles classical Latin, it actually has no meaning whatsoever. As Cicero's text
+          doesn't contain the letters K, W, or Z, alien to latin, these, and others are often inserted randomly to mimic the typographic appearence of European languages, as are digraphs not to be found in the original.</p>
+      </div>
+
+      <div class=" billionaires">
+
+        <div class="tile" id="tile1" data-target="#jackma">
+          <img data-target="#jackma" src="jackma.jpg">
+        </div>
+
+        <div class="tile" id="tile2" data-target="#billgates">
+          <img data-target="#billgates" src="billgates.jpg">
+        </div>
+
+        <div class="tile" id="tile3" data-target="#jeffbezos">
+          <img data-target="#jeffbezos" src="bezos.jpg">
+        </div>
+
+        <div class="tile" id="tile4" data-target="#bloomberg">
+          <img data-target="#bloomberg" src="bloomberg.jpg">
+        </div>
+
+        <div class="tile" id="tile5" data-target="#charleskoch">
+          <img data-target="#charleskoch" src="charleskoch.jpg">
+        </div>
+
+        <div class="tile" id="tile6" data-target="larryellison">
+          <img data-target="#larryellison" src="larryellison.jpg">
+        </div>
+
+        <div class="tile" id="tile7" data-target="#zuckerberg">
+          <img data-target="#zuckerberg" src="zuckerberg.jpg">
+        </div>
+
+
+      </div>
+      <!--closes the div with all the billionaires headshots-->
+
+      <div class="container" id="outputcontainer">
+        <!--Space for each individiual billionaire's story-->
+
+        <div class="container output" id="jackma">
+          <h2>Jack Ma</h2>
+          <p class="subheading">Mr. Superhero</p>
+          <img data-target="#jackma" src="jackma.jpg">
+          <!--output div, identified in Jscript by #jackma-->
+          <p class="content">Jack Ma gave a bunch of money. Good guy!</p>
+        </div>
+
+        <div class="container output" id="billgates">
+          <p class="minititle">Bill Gates</p>
+          <p class="subheading">Mr. I'm trying to save you people.</p>
+          <img data-target="#billgates" src="billgates.jpg">
+
+          <p class="content">Bill Gates gave a lot, lot of money. As usual. Also, he didn't engineer coronavirus to kill off half the planet, contrary to popular internet belief.</p>
+        </div>
+
+        <div class="container output" id="jeffbezos">
+          <p class="minititle">Jeff Bezos</p>
+          <p class="subheading">Mr. How can this make me richer?</p>
+          <img data-target="#jeffbezos" src="bezos.jpg">
+          <p class="content">Jeff Bezos gave money, but also managed to come off as more evil by treating Amazon workers poorly.</p>
+        </div>
+
+        <div class="container output" id="bloomberg">
+          <p class="minititle">Michael Bloomberg</p>
+          <p class="subheading">Mr. "Guys, remember when I was running for President? No? Good."</p>
+          <img data-target="#bloomberg" src="bloomberg.jpg">
+          <p class="content">Michael Bloomberg disappeared after talking about how he'd do 'whatever it takes' to...get himself elected.</p>
+        </div>
+
+        <div class="container output" id="charleskoch">
+          <p class="minititle">Charles Koch</p>
+          <p class="subheading">Mr. You-No-Stay-At-Home</p>
+          <img src="charleskoch.jpg">
+          <p class="content">Who was the most surprised by an international pandemic?<br><br>
+
+            Charles Koch would be a safe bet, if only because the man has spent so long trying to defund the CDC. In 2018, Koch’s Americans For Prosperity lobbied for $1 billion in cuts to the CDC. They argued the organization's funding had grown
+            significantly in 15 years, and that its public health services were ‘duplicative’.<br><br>
+
+            When Covid-19 hit, the AFP then began advocating against stay-at-home orders across the country. In several statements, the group called the orders the “wrong approach” and that “all businesses are essential.” That advice contradicts
+            medical experts at the top, and yet despite that, some say that languages has found a receptive ear in the president. Trump has also publicly toyed with the idea of reopening.<br><br>
+
+            At a net worth of 40 billion, Charles Koch’s influence is massive. The AFP is just one arm of his network that is mixed up in the coronavirus response. Koch industries employs over 130,000 workers. Koch also owns Georgia-Pacific, a
+            toilet-paper producer - sorry, “bath tissue” - among other things. It also owns Phillips Medisize, a medical device producer that makes test kits. In a statement, the company said they would be ‘transforming production lines in order to
+            meet the growing demand for life saving medical devices.”<br><br>
+
+            So Koch is either innovating his way through an economic collapse, or simply positioning himself to hold all the cards when the federal demand for test kits soars.<br><br>
+
+            One of Koch’s orgs, Stand Together, has announced that they are donating a total of $5 million dollars directly to families in sums of $500 each. It’s also donating over $5 million to community-based nonprofits.<br><br>
+
+            Notably, a small amount of that pot has come from Koch’s own coffers. Most of it is raised publicly.<br><br>
+
+            Recently, the AFP has broken with former tea-party groups who’ve supported shutdown protests across the country. The decision not to take part in shutdown protests was notable. Americans for Prosperity CEO Emily Seidel said she “did not
+            believe rejecting the advice of public health experts made sense.”<br><br>
+
+            The same health experts Koch has long tried to defund.<br><br>
+          </p>
+        </div>
+
+        <div class="container output" id="larryellison">
+          <p class="minititle">Larry Ellison</p>
+          <p class="subheading">Mr. Doctor? No, nope, never.</p>
+          <img data-target="#larryellison" src="larryellison.jpg">
+          <p class="content">Larry Ellison hopped on to the Hydroxichloroquine crazy bus with Trump. </p>
+        </div>
+
+        <div class="container output" id="zuckerberg">
+          <p class="minititle">Mark Zuckerberg</p>
+          <p class="subheading">Mr. Trying to be the good guy.</p>
+          <img data-target="#zuckerberg" src="zuckerberg.jpg">
+          <p class="content">Mark Zuckerberg worked with Bill Gates and came off surprisingly well, for once.</p>
+        </div>
+
+      </div>
     </div>
-
-    <div class="container introtext">
-      <p>Here's a couple hundred words you'll probably skip over, but are necessary before any interactive.</p>
-      <p>Click on the billionaires below to see how they reacted to the coronavirus pandemic.</p>
-    </div>
-
-    <div class=" billionaires">
-
-      <div class="tile" id="tile1" data-target="#jackma">
-        <img data-target="#jackma" src="jackma.jpg">
-      </div>
-
-      <div class="tile" id="tile2" data-target="#billgates">
-        <img data-target="#billgates" src="billgates.jpg">
-      </div>
-
-      <div class="tile" id="tile3" data-target="#jeffbezos">
-        <img data-target="#jeffbezos" src="bezos.jpg">
-      </div>
-
-      <div class="tile" id="tile4" data-target="#bloomberg">
-        <img data-target="#bloomberg" src="bloomberg.jpg">
-      </div>
-
-      <div class="tile" id="tile5" data-target="#charleskoch">
-        <img data-target="#charleskoch" src="charleskoch.jpg">
-      </div>
-
-      <div class="tile" id="tile6" data-target="larryellison">
-        <img data-target="#larryellison" src="larryellison.jpg">
-      </div>
-
-      <div class="tile" id="tile7" data-target="#zuckerberg">
-        <img data-target="#zuckerberg" src="zuckerberg.jpg">
-      </div>
-
-
-    </div>
-    <!--closes the div with all the billionaires headshots-->
-
-    <div class="container">
-      <!--Space for each individiual billionaire's story-->
-
-      <div class="container output" id="jackma">
-        <p class="minititle">Jack Ma</p>
-        <p class="subheading">Mr. Superhero</p>
-        <img data-target="#jackma" src="jackma.jpg">
-        <!--output div, identified in Jscript by #jackma-->
-        <p class="content">Jack Ma gave a bunch of money. Good guy!</p>
-      </div>
-
-      <div class="container output" id="billgates">
-        <p class="minititle">Bill Gates</p>
-        <p class="subheading">Mr. I'm trying to save you people.</p>
-        <img data-target="#billgates" src="billgates.jpg">
-
-        <p class="content">Bill Gates gave a lot, lot of money. As usual. Also, he didn't engineer coronavirus to kill off half the planet, contrary to popular internet belief.</p>
-      </div>
-
-      <div class="container output" id="jeffbezos">
-        <p class="minititle">Jeff Bezos</p>
-        <p class="subheading">Mr. How can this make me richer?</p>
-        <img data-target="#jeffbezos" src="bezos.jpg">
-        <p class="content">Jeff Bezos gave money, but also managed to come off as more evil by treating Amazon workers poorly.</p>
-      </div>
-
-      <div class="container output" id="bloomberg">
-        <p class="minititle">Michael Bloomberg</p>
-        <p class="subheading">Mr. "Guys, remember when I was running for President? No? Good."</p>
-        <img data-target="#bloomberg" src="bloomberg.jpg">
-        <p class="content">Michael Bloomberg disappeared after talking about how he'd do 'whatever it takes' to...get himself elected.</p>
-      </div>
-
-      <div class="container output" id="charleskoch">
-        <p class="minititle">Charles Koch</p>
-        <p class="subheading">Mr. You-No-Stay-At-Home</p>
-        <img src="charleskoch.jpg">
-        <p class="content">Who was the most surprised by an international pandemic?<br><br>
-
-          Charles Koch would be a safe bet, if only because the man has spent so long trying to defund the CDC. In 2018, Koch’s Americans For Prosperity lobbied for $1 billion in cuts to the CDC. They argued the organization's funding had grown
-          significantly in 15 years, and that its public health services were ‘duplicative’.<br><br>
-
-          When Covid-19 hit, the AFP then began advocating against stay-at-home orders across the country. In several statements, the group called the orders the “wrong approach” and that “all businesses are essential.” That advice contradicts
-          medical experts at the top, and yet despite that, some say that languages has found a receptive ear in the president. Trump has also publicly toyed with the idea of reopening.<br><br>
-
-          At a net worth of 40 billion, Charles Koch’s influence is massive. The AFP is just one arm of his network that is mixed up in the coronavirus response. Koch industries employs over 130,000 workers. Koch also owns Georgia-Pacific, a
-          toilet-paper producer - sorry, “bath tissue” - among other things. It also owns Phillips Medisize, a medical device producer that makes test kits. In a statement, the company said they would be ‘transforming production lines in order to
-          meet the growing demand for life saving medical devices.”<br><br>
-
-          So Koch is either innovating his way through an economic collapse, or simply positioning himself to hold all the cards when the federal demand for test kits soars.<br><br>
-
-          One of Koch’s orgs, Stand Together, has announced that they are donating a total of $5 million dollars directly to families in sums of $500 each. It’s also donating over $5 million to community-based nonprofits.<br><br>
-
-          Notably, a small amount of that pot has come from Koch’s own coffers. Most of it is raised publicly.<br><br>
-
-          Recently, the AFP has broken with former tea-party groups who’ve supported shutdown protests across the country. The decision not to take part in shutdown protests was notable. Americans for Prosperity CEO Emily Seidel said she “did not
-          believe rejecting the advice of public health experts made sense.”<br><br>
-
-          The same health experts Koch has long tried to defund.<br><br>
-        </p>
-      </div>
-
-      <div class="container output" id="larryellison">
-        <p class="minititle">Larry Ellison</p>
-        <p class="subheading">Mr. Doctor? No, nope, never.</p>
-        <img data-target="#larryellison" src="larryellison.jpg">
-        <p class="content">Larry Ellison hopped on to the Hydroxichloroquine crazy bus with Trump. </p>
-      </div>
-
-      <div class="container output" id="zuckerberg">
-        <p class="minititle">Mark Zuckerberg</p>
-        <p class="subheading">Mr. Trying to be the good guy.</p>
-        <img data-target="#zuckerberg" src="zuckerberg.jpg">
-        <p class="content">Mark Zuckerberg worked with Bill Gates and came off surprisingly well, for once.</p>
-      </div>
-
-    </div>
-
   </body>
   <!-- the jQuery library. You need this to be able to use jQuery ($) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
