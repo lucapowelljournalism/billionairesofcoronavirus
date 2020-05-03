@@ -25,46 +25,72 @@
 
   <body>
     <div class="ribbon">
-      <div class="container header">
-        <h1 class="title"> Billionaires of the Pandemic</h1>
+      <div class="container title">
+        <p> Billionaires of the Pandemic</p>
       </div>
 
-      <div class="container introtext">
-        <p>Here's a couple hundred words you'll probably skip over, but are necessary before any interactive.</p>
-        <p>Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It's also called placeholder (or filler) text. It's a convenient tool for mock-ups. It
-          helps to outline the visual elements of a document or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by the classical author and philosopher Cicero. Its words and letters have been changed by
-          addition or removal, so to deliberately render its content nonsensical; it's not genuine, correct, or comprehensible Latin anymore. While lorem ipsum's still resembles classical Latin, it actually has no meaning whatsoever. As Cicero's text
-          doesn't contain the letters K, W, or Z, alien to latin, these, and others are often inserted randomly to mimic the typographic appearence of European languages, as are digraphs not to be found in the original.</p>
+      <div class="container content">
+        <p>Billionaires. You love to hate them. But in a pandemic, well, everyone hopes they do something useful.<br><br>And some of them did. You can decide where it was 'good' or not. Certainly many billionaires felt the call to do something,
+          whether
+          it was donating a lot of money, a little bit of money, or simply making waves with terrible, terrible takes
+          (looking at you, Elon).<br><br>
+          So who put their money where their mouth is? See for yourself in the interactive below.</p>
       </div>
 
       <div class=" billionaires">
 
         <div class="tile" id="tile1" data-target="#jackma">
           <img data-target="#jackma" src="jackma.jpg">
+          <p> Jack Ma</p>
+          <div class="mobiletext">
+            <p class="content">He was China’s richest person. Now, he may also be one of its most well-known, particularly in countries receiving medical supply airdrops stamped with his last name.
+
+              <br><br>Since February, Ma has liberally moved much needed medical equipment around the world. When Iran was an epi-center, there came Ma with 1 million masks to contribute. When South Korea got hit by its first wave, it was the same
+              story. Italy, Malaysia, Thailand, Ethiopia, the United States, each one has been a recipient of Ma’s goodwill.
+
+              <br><br>He’s taken on the mantle of the billionaire the world needs. Still, not everyone’s sure about his motives. Are his donations as genuine as his Twitter account would like us to believe? Or are his actions another arm of Chinese
+              soft power abroad?
+
+              <br><br>Take his many donations to countries in Africa, a continent which China has played a significant role in developing through loans and trade in the 21st century. Even African thinkers have questioned if his donations are really
+              what Africa needs, or if they are simply a way for Ma to curry goodwill towards China on the continent.
+
+              <br><br>It’s not hard to imagine why. The sheer economic might of Alibaba in Asia has made Ma a big player in Chinese politics. And while he’s been sending ventilators around the world, many other top Chinese players have been playing a
+              different diplomatic game: deflecting blame for coronavirus onto countries like the United States through state-run media channels. The facelift on China’s image, tarnished by the outbreak in Wuhan, has more than form.
+
+              <br><br>Regardless, his presence in the global fight against COVID-19 has been ubiquitous. Over 150 countries have received his donations, according to data from Alizila. He’s donated over 120 million facemasks, 4 million testing kits,
+              and 3,700 ventilators.
+            </p>
+          </div>
         </div>
 
         <div class="tile" id="tile2" data-target="#billgates">
           <img data-target="#billgates" src="billgates.jpg">
+          <p>Bill Gates</p>
         </div>
 
         <div class="tile" id="tile3" data-target="#jeffbezos">
           <img data-target="#jeffbezos" src="bezos.jpg">
+          <p>Jeff Bezos</p>
         </div>
 
         <div class="tile" id="tile4" data-target="#bloomberg">
           <img data-target="#bloomberg" src="bloomberg.jpg">
+          <p>Michael Bloomberg</p>
         </div>
 
         <div class="tile" id="tile5" data-target="#charleskoch">
           <img data-target="#charleskoch" src="charleskoch.jpg">
+          <p>Charles Koch</p>
         </div>
 
         <div class="tile" id="tile6" data-target="larryellison">
           <img data-target="#larryellison" src="larryellison.jpg">
+          <p>Larry Ellison</p>
         </div>
 
         <div class="tile" id="tile7" data-target="#zuckerberg">
           <img data-target="#zuckerberg" src="zuckerberg.jpg">
+          <p>Mark Zuckerberg</p>
         </div>
 
 
@@ -76,15 +102,31 @@
 
         <div class="container output" id="jackma">
           <h2>Jack Ma</h2>
-          <p class="subheading">Mr. Superhero</p>
+          <p class="subheading">China's Superhero</p>
           <img data-target="#jackma" src="jackma.jpg">
           <!--output div, identified in Jscript by #jackma-->
-          <p class="content">Jack Ma gave a bunch of money. Good guy!</p>
+          <p class="content" id="content">He was China’s richest person. Now, he may also be one of its most well-known, particularly in countries receiving medical supply airdrops stamped with his last name.
+
+            <br><br>Since February, Ma has liberally moved much needed medical equipment around the world. When Iran was an epi-center, there came Ma with 1 million masks to contribute. When South Korea got hit by its first wave, it was the same
+            story. Italy, Malaysia, Thailand, Ethiopia, the United States, each one has been a recipient of Ma’s goodwill.
+
+            <br><br>He’s taken on the mantle of the billionaire the world needs. Still, not everyone’s sure about his motives. Are his donations as genuine as his Twitter account would like us to believe? Or are his actions another arm of Chinese
+            soft power abroad?
+
+            <br><br>Take his many donations to countries in Africa, a continent which China has played a significant role in developing through loans and trade in the 21st century. Even African thinkers have questioned if his donations are really
+            what Africa needs, or if they are simply a way for Ma to curry goodwill towards China on the continent.
+
+            <br><br>It’s not hard to imagine why. The sheer economic might of Alibaba in Asia has made Ma a big player in Chinese politics. And while he’s been sending ventilators around the world, many other top Chinese players have been playing a
+            different diplomatic game: deflecting blame for coronavirus onto countries like the United States through state-run media channels. The facelift on China’s image, tarnished by the outbreak in Wuhan, has more than form.
+
+            <br><br>Regardless, his presence in the global fight against COVID-19 has been ubiquitous. Over 150 countries have received his donations, according to data from Alizila. He’s donated over 120 million facemasks, 4 million testing kits,
+            and 3,700 ventilators.
+          </p>
         </div>
 
         <div class="container output" id="billgates">
           <p class="minititle">Bill Gates</p>
-          <p class="subheading">Mr. I'm trying to save you people.</p>
+          <p class="subheading">Nobel Prize Winner?</p>
           <img data-target="#billgates" src="billgates.jpg">
 
           <p class="content">Bill Gates gave a lot, lot of money. As usual. Also, he didn't engineer coronavirus to kill off half the planet, contrary to popular internet belief.</p>
@@ -92,21 +134,21 @@
 
         <div class="container output" id="jeffbezos">
           <p class="minititle">Jeff Bezos</p>
-          <p class="subheading">Mr. How can this make me richer?</p>
+          <p class="subheading">"Hmm, how can this make me richer?""</p>
           <img data-target="#jeffbezos" src="bezos.jpg">
           <p class="content">Jeff Bezos gave money, but also managed to come off as more evil by treating Amazon workers poorly.</p>
         </div>
 
         <div class="container output" id="bloomberg">
           <p class="minititle">Michael Bloomberg</p>
-          <p class="subheading">Mr. "Guys, remember when I was running for President? No? Good."</p>
+          <p class="subheading">"Remember when I was running for President? No? Good."</p>
           <img data-target="#bloomberg" src="bloomberg.jpg">
           <p class="content">Michael Bloomberg disappeared after talking about how he'd do 'whatever it takes' to...get himself elected.</p>
         </div>
 
         <div class="container output" id="charleskoch">
           <p class="minititle">Charles Koch</p>
-          <p class="subheading">Mr. You-No-Stay-At-Home</p>
+          <p class="subheading">"Freedom? Freedom means making me money."</p>
           <img src="charleskoch.jpg">
           <p class="content">Who was the most surprised by an international pandemic?<br><br>
 
@@ -135,16 +177,16 @@
 
         <div class="container output" id="larryellison">
           <p class="minititle">Larry Ellison</p>
-          <p class="subheading">Mr. Doctor? No, nope, never.</p>
+          <p class="subheading">"Hydroxichloroquine! Bleach! Data! Oh, Trump heard me say that?""</p>
           <img data-target="#larryellison" src="larryellison.jpg">
           <p class="content">Larry Ellison hopped on to the Hydroxichloroquine crazy bus with Trump. </p>
         </div>
 
         <div class="container output" id="zuckerberg">
           <p class="minititle">Mark Zuckerberg</p>
-          <p class="subheading">Mr. Trying to be the good guy.</p>
+          <p class="subheading">TK</p>
           <img data-target="#zuckerberg" src="zuckerberg.jpg">
-          <p class="content">Mark Zuckerberg worked with Bill Gates and came off surprisingly well, for once.</p>
+          <p class="content">TK</p>
         </div>
 
       </div>

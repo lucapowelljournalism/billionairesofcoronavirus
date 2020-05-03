@@ -20,7 +20,7 @@ You will find this is far easier than the opposite task of using CSS to cram you
 
 html, body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
-    font-size: 12px;
+    font-size: 16px;
     color: #E4EBEB;
     background-image: url(worldmap3.jpg);
     background-size: cover;
@@ -28,143 +28,189 @@ html, body {
     overflow: auto;
 }
 
-p {
-    font-size: 3em;
-}
+@media(min-width: 375px) {
+    .container {
+        max-width: 800px;
+        width: 375px;
+        margin: 0 auto;
+    }
 
-.ribbon {
-    /*might put a nice light gray in here to light up the text better, like in the landing page.*/
-}
+    .container.title p {
+        font-size: 3.5em;
+        text-shadow: 2.5px 2.5px gray;
+        margin: 10%;
+    }
 
-.container h1 {
-    font-size: 6em;
-}
+    .container.content p {
+        font-size: 1em;
+        line-height: 1.5em;
+        margin: 10%;
+    }
 
-.container {
-    max-width: 1000px;
-    width: 75%;
-    margin: 0 auto;
-}
+    .billionaires {
+        display: inline-block;
+        justify-content: center;
+    }
 
-.title {
-    font-size: 42px;
-}
+    .tile {
+        display: block;
+        padding: 2em;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        text-align: center;
+        /*This is broken*/
+    }
 
-.container p {
-    padding: 1em;
-    font-size: 2em;
-    line-height: 1.5em;
-}
+    .tile img {
+        max-width: 375px;
+        width: 66%;
+        border-radius: 48%;
+    }
 
-#outputcontainer {
-    display: flex;
-}
+    .tile p {
+        font-size: 2em;
+    }
 
-.billionaires {
-    display: flex;
-    justify-content: center;
-}
+    .mobiletext {
+        display: none;
+    }
 
-.header {
-    margin-top: 10%;
-    text-align: center;
-}
+    .output {
+        text-align: center;
+        display: none;
+        width: 375px;
+        padding: 25px;
+    }
 
-.tile {
-    display: inline-block;
-    padding: 2em;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    /*This is broken*/
-}
+    .content {
+        text-align: left;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
 
-.tile img {
-    max-width: 150px;
-    width: 100%;
-    border-radius: 48%;
-    display: inline-block;
-}
+    .output img {
+        display: inline-block;
+        width: 250px;
+        border-radius: 50%;
+        padding: 5px;
+    }
 
-.output {
-    display: none;
-    position: relative;
-    top: 100px;
-    border-radius: 15px;
-    width: 1000px;
-    padding: 10px;
-    text-align: center;
-    /*background-color: #363737;*/
-}
+    .active {
+        display: block;
+    }
 
-.content {
-    font-size: 1em;
-    line-height: 1.5em;
-}
-
-.output img {
-    display: inline-block;
-    width: 250px;
-    border-radius: 50%;
-    padding: 5px;
-}
-
-.active {
-    display: block;
-}
-
-#tile1 {
-    top: 300px;
-}
-
-#tile2 {
-    top: 180px;
-}
-
-#tile3 {
-    top: 90px;
-}
-
-#tile4 {
-    top: 45px;
-}
-
-#tile5 {
-    top: 90px;
-}
-
-#tile6 {
-    top: 180px;
-}
-
-#tile7 {
-    top: 300px;
-}
-
-.bodytext {
-    margin-top: 2em;
-    border-radius: 15px;
-    width: 1000px;
-    padding: 15px;
-}
-
-.bodytext p {
-    font-size: 1em;
-    line-height: 1.5em;
-}
-
-/*********************************************************************
+    /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
-@media(min-width: 681px) {
-    /* Any adjustments for tablets and larger go here.
-    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
-}
+    @media(min-width: 681px) {
+        .container {
+            max-width: 1000px;
+            width: 70%;
+            margin: 0 auto;
+        }
 
-/*********************************************************************
+        .container.title p {
+            font-size: 3.5em;
+            text-shadow: 2.5px 2.5px gray;
+        }
+
+        .container.content p {
+            font-size: 1.5em;
+            line-height: 1.3em;
+        }
+
+        .billionaires {
+            display: flex;
+            justify-content: center;
+        }
+
+        .tile p {
+            /*Hides a title if its not in mobile display*/
+            display: none;
+        }
+
+        .tile img {
+            max-width: 150px;
+            width: 100%;
+            border-radius: 48%;
+            display: inline-block;
+        }
+
+        .output {
+            display: none;
+            position: relative;
+            top: 100px;
+            border-radius: 15px;
+            padding: 10px;
+            text-align: center;
+            /*background-color: #363737;*/
+        }
+
+        .output img {
+            display: inline-block;
+            width: 250px;
+            border-radius: 50%;
+            padding: 5px;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .bodytext {
+            margin-top: 2em;
+            border-radius: 15px;
+            width: 1000px;
+            padding: 15px;
+        }
+
+        .bodytext p {
+            font-size: 1em;
+            line-height: 1.5em;
+        }
+
+        .billionaires {
+            display: flex;
+            justify-content: center;
+        }
+
+        #tile1 {
+            top: 300px;
+        }
+
+        #tile2 {
+            top: 180px;
+        }
+
+        #tile3 {
+            top: 90px;
+        }
+
+        #tile4 {
+            top: 45px;
+        }
+
+        #tile5 {
+            top: 90px;
+        }
+
+        #tile6 {
+            top: 180px;
+        }
+
+        #tile7 {
+            top: 300px;
+        }
+
+        /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    }
+
+    /*********************************************************************
   YOUR DESKTOP-ONLY STYLES GO HERE
 *********************************************************************/
-@media(min-width: 729px) {
-    /* Any adjustments for desktop and larger go here.
+    @media(min-width: 729px) {
+        /* Any adjustments for desktop and larger go here.
     Note these styles will be applied to anything 729px or larger -- so desktop */
-}
+    }
