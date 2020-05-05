@@ -8,3 +8,12 @@ $("body").on("click", ".tile", function (e) {
 	$(".output.active").removeClass("active"); //hide any text that was showing from a prior billionaire
 	$(target).addClass("active"); //add active class, aka display:block, to this text
 });
+
+$("body").on("click", ".output .close", function (e) {
+	e.preventDefault();
+
+	const this_close = $(this);
+	const this_output = this_close.closest(".output.active");
+
+	this_output.removeClass("active");
+});
