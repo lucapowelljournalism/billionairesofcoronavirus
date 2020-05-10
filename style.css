@@ -41,6 +41,12 @@ html, body {
         display: inline-block;
     }
 
+    h6 a {
+        font-size: .7em;
+        color: white;
+        text-decoration: none;
+    }
+
     #byline {
         border-width: 0 0 1px 0;
         border-style: dotted;
