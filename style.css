@@ -21,6 +21,7 @@ You will find this is far easier than the opposite task of using CSS to cram you
 html, body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
+    font-family: Verdana, sans-serif;
     color: #E4EBEB;
     background-image: url(worldmap3.jpg);
     background-size: cover;
@@ -28,44 +29,22 @@ html, body {
     overflow: auto;
 }
 
-@media(max-width: 680px) {
-    .output {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        overflow: auto;
-        width: 100%;
-        background-color: #000;
-        padding: 50px;
-        z-index: -1;
-        opacity: 1;
-    }
-
-    .output a.close {
-        position: absolute;
-        top: 3%;
-        right: 3%;
-        color: #FFF;
-        z-index: 3;
-        font-size: 3em;
-    }
-
-    .output.active {
-        opacity: 1;
-        z-index: 2;
-    }
-}
-
-@media(min-width: 375px) {
+@media(min-width: 100px) {
     h6 {
-        font-size: .6em;
+        width: 80%;
+        font-size: 1.25em;
         font-weight: bold;
         margin-left: 10%;
         margin-right: 10%;
         color: green;
         text-shadow: .35px .35px #c23407;
         display: inline-block;
+    }
+
+    #byline {
+        border-width: 0 0 1px 0;
+        border-style: dotted;
+        padding-bottom: 5px;
     }
 
     .container {
@@ -76,7 +55,7 @@ html, body {
 
     .container.title p {
         font-size: 3.5em;
-        text-shadow: 2.5px 2.5px gray;
+        text-shadow: 2.5px 2.5px green;
         text-align: left;
         margin-left: 10%;
         margin-right: 5%;
@@ -128,6 +107,10 @@ html, body {
         line-height: 1.5em;
     }
 
+    .financials {
+        font-size: 1.3em;
+    }
+
     .output img {
         display: inline-block;
         width: 250px;
@@ -135,24 +118,72 @@ html, body {
         padding: 5px;
     }
 
+    @media(max-width: 450px) {
+        .output {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            overflow: auto;
+            width: 100%;
+            background-color: #000;
+            padding: 50px;
+            z-index: -1;
+            opacity: 1;
+        }
+
+        .output a.close {
+            position: absolute;
+            top: 3%;
+            right: 3%;
+            color: #FFF;
+            z-index: 3;
+            font-size: 3em;
+        }
+
+        .output.active {
+            opacity: 1;
+            z-index: 2;
+        }
+    }
+
     /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
     @media(min-width: 681px) {
+        h6 {
+            width: 100%;
+            font-size: 1.25em;
+            font-weight: bold;
+            color: green;
+            display: inline-block;
+            margin: 5% auto;
+        }
+
         .container {
-            max-width: 1000px;
+            max-width: 800px;
             width: 70%;
             margin: 0 auto;
         }
 
         .container.title p {
-            font-size: 3.5em;
-            text-shadow: 2.5px 2.5px gray;
+            font-size: 4em;
+            text-shadow: 2.5px 2.5px green;
+            text-align: left;
+            margin: 0 auto;
+        }
+
+        #byline {
+            border-width: 0 0 1px 0;
+            border-style: dotted;
+            padding-bottom: 5px;
         }
 
         .container.content p {
-            font-size: 1.5em;
+            text-align: left;
+            font-size: 1em;
             line-height: 1.3em;
+            margin: 0 auto;
         }
 
         .billionaires {
@@ -161,7 +192,7 @@ html, body {
         }
 
         .tile p {
-            /*Hides a title if its not in mobile display*/
+            /*Hides a title's headline if the page is not in mobile display*/
             display: none;
         }
 
