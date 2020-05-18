@@ -1,19 +1,5 @@
-/*
-This is a good layout for a mobile-first CSS template.
-Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
-Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
-
-Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
-You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
-*/
-/*********************************************************************
- LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
-*********************************************************************/
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
 
-/*********************************************************************
-  YOUR MOBILE/BASE STYLES GO HERE
-*********************************************************************/
 * {
     box-sizing: border-box;
 }
@@ -23,7 +9,7 @@ html, body {
     font-size: 16px;
     font-family: Verdana, sans-serif;
     color: #E4EBEB;
-    background-image: url(worldmap3.jpg);
+    background-image: url(img/worldmap3.jpg);
     background-size: cover;
     height: 100%;
     overflow: auto;
@@ -31,18 +17,16 @@ html, body {
 
 @media(min-width: 100px) {
     h6 {
-        width: 80%;
-        font-size: 1.25em;
+        font-size: .7em;
         font-weight: bold;
         margin-left: 10%;
         margin-right: 10%;
         color: green;
-        text-shadow: .35px .35px #c23407;
         display: inline-block;
     }
 
     h6 a {
-        font-size: .7em;
+        font-size: 1em;
         color: white;
         text-decoration: none;
     }
@@ -74,7 +58,6 @@ html, body {
     }
 
     .billionaires {
-        display: inline-block;
         justify-content: center;
     }
 
@@ -124,7 +107,38 @@ html, body {
         padding: 5px;
     }
 
-    @media(max-width: 450px) {
+    .bottom {
+        border-top: 1px dotted #BDCEDA;
+        padding-top: 10px;
+        font-size: .75em;
+        color: green;
+        display: inline;
+        width: 100%;
+    }
+
+    .bottom p {
+        display: inline;
+        vertical-align: middle;
+    }
+
+    .bottom img {
+        width: 30px;
+        display: inline;
+        padding-left: 5px;
+        vertical-align: middle;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .source {
+        font-size: .75em;
+    }
+
+    @media(max-width: 680px) {
         .output {
             position: fixed;
             top: 0;
@@ -158,12 +172,16 @@ html, body {
 *********************************************************************/
     @media(min-width: 681px) {
         h6 {
-            width: 100%;
-            font-size: 1.25em;
+            width: 80%;
             font-weight: bold;
             color: green;
             display: inline-block;
             margin: 5% auto;
+        }
+
+        .bottom {
+            position: relative;
+            bottom: -340px;
         }
 
         .container {
@@ -173,7 +191,7 @@ html, body {
         }
 
         .container.title p {
-            font-size: 4em;
+            font-size: 2.5em;
             text-shadow: 2.5px 2.5px green;
             text-align: left;
             margin: 0 auto;
@@ -203,6 +221,7 @@ html, body {
         }
 
         .tile img {
+            min-width: 65px;
             max-width: 150px;
             width: 100%;
             border-radius: 48%;

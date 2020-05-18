@@ -24,221 +24,252 @@
   </head>
 
   <body>
-    <div class="ribbon">
-      <div class="container title">
-        <h6>NYC News Service</h6>
-        <p> Billionaires of the Pandemic</p>
-        <h6 id="byline">By Luca Powell and Violetta Nespolo</h6>
-        <h6><a href="https://leonardomarch.github.io/covidproject/">Return to Project Homepage</a></h6>
+    <div class="container title">
+      <h6>NYC News Service</h6>
+      <p> Billionaires of the Pandemic</p>
+      <h6 id="byline">By Luca Powell and Violetta Nespolo</h6>
+    </div>
+
+    <div class="container content">
+      <p>Billionaires. You love to hate them. But in a pandemic, well, everyone hopes they do something useful.<br><br>And some of them did. You can decide where it was 'good' or not. Certainly many billionaires felt the call to do something,
+        whether
+        it was donating a lot of money, a little bit of money, or simply making waves with terrible, terrible takes
+        (looking at you, Elon).<br><br>
+        So who put their money where their mouth is? See for yourself in the interactive below.</p>
+    </div>
+
+    <div class="billionaires">
+
+      <div class="tile" id="tile1" data-target="#jackma">
+        <img data-target="#jackma" src="img/jackma.jpg">
+        <p> Jack Ma</p>
       </div>
 
-      <div class="container content">
-        <p>Billionaires. You love to hate them. But in a pandemic, well, everyone hopes they do something useful.<br><br>And some of them did. You can decide where it was 'good' or not. Certainly many billionaires felt the call to do something,
-          whether
-          it was donating a lot of money, a little bit of money, or simply making waves with terrible, terrible takes
-          (looking at you, Elon).<br><br>
-          So who put their money where their mouth is? See for yourself in the interactive below.</p>
+      <div class="tile" id="tile2" data-target="#billgates">
+        <img data-target="#billgates" src="img/billgates.jpg">
+        <p>Bill Gates</p>
       </div>
 
-      <div class=" billionaires">
+      <div class="tile" id="tile3" data-target="#jeffbezos">
+        <img data-target="#jeffbezos" src="img/bezos.jpg">
+        <p>Jeff Bezos</p>
+      </div>
 
-        <div class="tile" id="tile1" data-target="#jackma">
-          <img data-target="#jackma" src="jackma.jpg">
-          <p> Jack Ma</p>
-        </div>
+      <div class="tile" id="tile4" data-target="#bloomberg">
+        <img data-target="#bloomberg" src="img/bloomberg.jpg">
+        <p>Michael Bloomberg</p>
+      </div>
 
-        <div class="tile" id="tile2" data-target="#billgates">
-          <img data-target="#billgates" src="billgates.jpg">
-          <p>Bill Gates</p>
-        </div>
+      <div class="tile" id="tile5" data-target="#charleskoch">
+        <img data-target="#charleskoch" src="img/charleskoch.jpg">
+        <p>Charles Koch</p>
+      </div>
 
-        <div class="tile" id="tile3" data-target="#jeffbezos">
-          <img data-target="#jeffbezos" src="bezos.jpg">
-          <p>Jeff Bezos</p>
-        </div>
+      <div class="tile" id="tile6" data-target="ferrero">
+        <img data-target="#ferrero" src="img/chocolate_man.jpg">
+        <p>Giovanni Ferrero</p>
+      </div>
 
-        <div class="tile" id="tile4" data-target="#bloomberg">
-          <img data-target="#bloomberg" src="bloomberg.jpg">
-          <p>Michael Bloomberg</p>
-        </div>
+      <div class="tile" id="tile7" data-target="#elonmusk">
+        <img data-target="#elonmusk" src="img/musk.jpg">
+        <p>Elon Musk</p>
+      </div>
 
-        <div class="tile" id="tile5" data-target="#charleskoch">
-          <img data-target="#charleskoch" src="charleskoch.jpg">
-          <p>Charles Koch</p>
-        </div>
 
-        <div class="tile" id="tile6" data-target="ferrero">
-          <img data-target="#ferrero" src="chocolate_man.jpg">
-          <p>Giovanni Ferrero</p>
-        </div>
+    </div>
+    <!--closes the div with all the billionaires headshots-->
 
-        <div class="tile" id="tile7" data-target="#elonmusk">
-          <img data-target="#elonmusk" src="elon_musk.jpg">
-          <p>Elon Musk</p>
-        </div>
+    <div class="container" id="outputcontainer">
+      <!--Space for each individiual billionaire's story-->
 
+      <div class="container output" id="jackma">
+        <a class='fa fa-close close'></a>
+        <h2>Jack Ma</h2>
+        <p class="subheading"><em>China's Superhero</em></p>
+        <img data-target="#jackma" src="img/jackma.jpg">
+        <!--output div, identified in Jscript by #jackma-->
+        <p class="content">He was China’s richest person. Now, he may also be one of its most well-known, particularly in countries receiving medical supply airdrops stamped with his last name.
+
+          <br><br>Since February, Ma has liberally moved much needed medical equipment around the world. When Iran was an epi-center, there came Ma with 1 million masks to contribute. When South Korea got hit by its first wave, it was the same
+          story. Italy, Malaysia, Thailand, Ethiopia, the United States, each one has been a recipient of Ma’s goodwill.
+
+          <br><br>He’s taken on the mantle of the billionaire the world needs. Still, not everyone’s sure about his motives. Are his donations as genuine as his Twitter account would like us to believe? Or are his actions another arm of Chinese
+          soft power abroad?
+
+          <br><br>Take his many donations to countries in Africa, a continent which China has played a significant role in developing through loans and trade in the 21st century. Even African thinkers have questioned if his donations are really
+          what Africa needs, or if they are simply a way for Ma to curry goodwill towards China on the continent.
+
+          <br><br>It’s not hard to imagine why. The sheer economic might of Alibaba in Asia has made Ma a big player in Chinese politics. And while he’s been sending ventilators around the world, many other top Chinese players have been playing a
+          different diplomatic game: deflecting blame for coronavirus onto countries like the United States through state-run media channels. The facelift on China’s image, tarnished by the outbreak in Wuhan, has more than form.
+
+          <br><br>Regardless, his presence in the global fight against COVID-19 has been ubiquitous. Over 150 countries have received his donations, according to data from Alizila. He’s donated over 120 million facemasks, 4 million testing kits,
+          and 3,700 ventilators.
+        </p>
+        <p class="content center financials">
+          Estimated contribution: $144.2 million<br><br>
+          Net Worth: ~ $41.7 billion
+        </p>
+        <p class="content source">
+          Source: <a href="https://blog.candid.org/post/funders-respond-to-coronavirus-covid-19/">Candid.Org</a>
+        </p>
+      </div>
+
+      <div class="container output" id="billgates">
+        <a class='fa fa-close close'></a>
+        <h2 class="minititle">Bill Gates</h2>
+        <p class="subheading"><em>Can I get my Nobel Prize, already?</em></p>
+        <img data-target="#billgates" src="img/billgates.jpg">
+
+        <p class="content">If he could save the world with a check, he would have by now.<br><br>
+
+          Gates has long been a leading figure in the world of international relief. He was on the forefront of Ebola relief in 2014. A year later he went on to give a now famous Ted talk that would prove prescient. It’s title: “The Next Outbreak?
+          We’re not ready.”<br><br>
+
+          By contrast, Gates has sought to model preparedness. His foundation is heavily funding vaccine trials around the world. It’s also looking ahead to the heavy lift of manufacturing and distributing some 7 billion doses around the world. His
+          vaccine organization, Gavi, will likely be a key player: the nonprofit coordinates vaccine distribution in developing countries.<br><br>
+
+          Simply by having been so involved for so long in this wheelhouse, Gates has established himself as a global health expert in his own right. He’s often on cable news, and his press releases now get wide replay across news sites of all
+          stripes.<br><br>
+
+          Including, of course some conspiracy theories, like that Gates engineered the virus to turn a profit. Those theorists have proposed his vaccine distribution network is how he would do that. People who actually know science have pointed
+          out how vaccines are ‘dramatically less profitable’ than people think. Touche, Johns Hopkins.<br><br>
+
+          Gates has publicly stated he will happily lose billions to make this vaccine happen. As it stands, he’s funding 7 different trials, with the plan of abandoning the five least promising.<br><br>
+
+          “It’ll be a few billion dollars we’ll waste on manufacturing for the constructs that don’t get picked because something else is better. But a few billion in this situation we’re in, where there’s trillions of dollars...being lost
+          economically, it is worth it,” Gates said.</p>
+        <p class="content financials">
+          Estimated contribution: At least $900 million<br><br>
+          Net Worth: ~ $100 billon
+        </p>
+        <p class="content source">
+          Source: <a href="https://www.inc.com/don-reisinger/why-bill-gates-is-business-worlds-coronavirus-leader.html">Inc</a>
+        </p>
 
       </div>
-      <!--closes the div with all the billionaires headshots-->
 
-      <div class="container" id="outputcontainer">
-        <!--Space for each individiual billionaire's story-->
-
-        <div class="container output" id="jackma">
-          <a class='fa fa-close close'></a>
-          <h2>Jack Ma</h2>
-          <p class="subheading"><em>China's Superhero</em></p>
-          <img data-target="#jackma" src="jackma.jpg">
-          <!--output div, identified in Jscript by #jackma-->
-          <p class="content">He was China’s richest person. Now, he may also be one of its most well-known, particularly in countries receiving medical supply airdrops stamped with his last name.
-
-            <br><br>Since February, Ma has liberally moved much needed medical equipment around the world. When Iran was an epi-center, there came Ma with 1 million masks to contribute. When South Korea got hit by its first wave, it was the same
-            story. Italy, Malaysia, Thailand, Ethiopia, the United States, each one has been a recipient of Ma’s goodwill.
-
-            <br><br>He’s taken on the mantle of the billionaire the world needs. Still, not everyone’s sure about his motives. Are his donations as genuine as his Twitter account would like us to believe? Or are his actions another arm of Chinese
-            soft power abroad?
-
-            <br><br>Take his many donations to countries in Africa, a continent which China has played a significant role in developing through loans and trade in the 21st century. Even African thinkers have questioned if his donations are really
-            what Africa needs, or if they are simply a way for Ma to curry goodwill towards China on the continent.
-
-            <br><br>It’s not hard to imagine why. The sheer economic might of Alibaba in Asia has made Ma a big player in Chinese politics. And while he’s been sending ventilators around the world, many other top Chinese players have been playing a
-            different diplomatic game: deflecting blame for coronavirus onto countries like the United States through state-run media channels. The facelift on China’s image, tarnished by the outbreak in Wuhan, has more than form.
-
-            <br><br>Regardless, his presence in the global fight against COVID-19 has been ubiquitous. Over 150 countries have received his donations, according to data from Alizila. He’s donated over 120 million facemasks, 4 million testing kits,
-            and 3,700 ventilators.
-          </p>
-          <p class="content financials">
-            Estimated contribution: TK<br><br>
-            Net Worth: TK
-          </p>
-        </div>
-
-        <div class="container output" id="billgates">
-          <a class='fa fa-close close'></a>
-          <h2 class="minititle">Bill Gates</h2>
-          <p class="subheading"><em>Can I get my Nobel Prize, already?</em></p>
-          <img data-target="#billgates" src="billgates.jpg">
-
-          <p class="content">If he could save the world with a check, he would have by now.<br><br>
-
-            Gates has long been a leading figure in the world of international relief. He was on the forefront of Ebola relief in 2014. A year later he went on to give a now famous Ted talk that would prove prescient. It’s title: “The Next Outbreak?
-            We’re not ready.”<br><br>
-
-            By contrast, Gates has sought to model preparedness. His foundation is heavily funding vaccine trials around the world. It’s also looking ahead to the heavy lift of manufacturing and distributing some 7 billion doses around the world. His
-            vaccine organization, Gavi, will likely be a key player: the nonprofit coordinates vaccine distribution in developing countries.<br><br>
-
-            Simply by having been so involved for so long in this wheelhouse, Gates has established himself as a global health expert in his own right. He’s often on cable news, and his press releases now get wide replay across news sites of all
-            stripes.<br><br>
-
-            Including, of course some conspiracy theories, like that Gates engineered the virus to turn a profit. Those theorists have proposed his vaccine distribution network is how he would do that. People who actually know science have pointed
-            out how vaccines are ‘dramatically less profitable’ than people think. Touche, Johns Hopkins.<br><br>
-
-            Gates has publicly stated he will happily lose billions to make this vaccine happen. As it stands, he’s funding 7 different trials, with the plan of abandoning the five least promising.<br><br>
-
-            “It’ll be a few billion dollars we’ll waste on manufacturing for the constructs that don’t get picked because something else is better. But a few billion in this situation we’re in, where there’s trillions of dollars...being lost
-            economically, it is worth it,” Gates said.</p>
-          <p class="content financials">
-            Estimated contribution: At least $461 million, plus uncomfirmed billions to fund vaccine distribution<br><br>
-            Net Worth: ~$100 billon
-          </p>
-
-        </div>
-
-        <div class="container output" id="jeffbezos">
-          <a class='fa fa-close close'></a>
-          <h2 class="minititle">Jeff Bezos</h2>
-          <p class="subheading"><em>Hmm, how can this make me richer?"</em></p>
-          <img data-target="#jeffbezos" src="bezos.jpg">
-          <p class="content">Jeff Bezos gave money, but also managed to come off as more evil by treating Amazon workers poorly.</p>
-          <p class="content financials">
-            Estimated contribution: $100 million to food banks<br><br>
-            Net Worth: ~$100 billon
-          </p>
-        </div>
-
-        <div class="container output" id="bloomberg">
-          <a class='fa fa-close close'></a>
-          <h2 class="minititle">Michael Bloomberg</h2>
-          <p class="subheading"><em>Remember when I was running for President? No? Good.</em></p>
-          <img data-target="#bloomberg" src="bloomberg.jpg">
-          <p class="content">Michael Bloomberg disappeared after talking about how he'd do 'whatever it takes' to...get himself elected.</p>
-          <p class="content financials">
-            Estimated contribution: TK<br><br>
-            Net Worth: ~50 billion
-          </p>
-        </div>
-
-        <div class="container output" id="charleskoch">
-          <a class='fa fa-close close'></a>
-          <h2 class="minititle">Charles Koch</h2>
-          <p class="subheading"><em>Freedom? Freedom means making me money.</em></p>
-          <img src="charleskoch.jpg">
-          <p class="content">Who was the most surprised by an international pandemic?<br><br>
-
-            Charles Koch would be a safe bet, if only because the man has spent so long trying to defund the CDC. In 2018, Koch’s Americans For Prosperity lobbied for $1 billion in cuts to the CDC. They argued the organization's funding had grown
-            significantly in 15 years, and that its public health services were ‘duplicative’.<br><br>
-
-            When Covid-19 hit, the AFP then began advocating against stay-at-home orders across the country. In several statements, the group called the orders the “wrong approach” and that “all businesses are essential.” That advice contradicts
-            medical experts at the top, and yet despite that, some say that languages has found a receptive ear in the president. Trump has also publicly toyed with the idea of reopening.<br><br>
-
-            At a net worth of 40 billion, Charles Koch’s influence is massive. The AFP is just one arm of his network that is mixed up in the coronavirus response. Koch industries employs over 130,000 workers. Koch also owns Georgia-Pacific, a
-            toilet-paper producer - sorry, “bath tissue” - among other things. It also owns Phillips Medisize, a medical device producer that makes test kits. In a statement, the company said they would be ‘transforming production lines in order to
-            meet the growing demand for life saving medical devices.”<br><br>
-
-            So Koch is either innovating his way through an economic collapse, or simply positioning himself to hold all the cards when the federal demand for test kits soars.<br><br>
-
-            One of Koch’s orgs, Stand Together, has announced that they are donating a total of $5 million dollars directly to families in sums of $500 each. It’s also donating over $5 million to community-based nonprofits.<br><br>
-
-            Notably, a small amount of that pot has come from Koch’s own coffers. Most of it is raised publicly.<br><br>
-
-            Recently, the AFP has broken with former tea-party groups who’ve supported shutdown protests across the country. The decision not to take part in shutdown protests was notable. Americans for Prosperity CEO Emily Seidel said she “did not
-            believe rejecting the advice of public health experts made sense.”<br><br>
-
-            The same health experts Koch has long tried to defund.<br><br>
-          </p>
-          <p class="content financials">
-            Estimated contribution: TK<br><br>
-            Net Worth: TK
-          </p>
-        </div>
-
-        <div class="container output" id="ferrero">
-          <a class='fa fa-close close'></a>
-          <h2 class="minititle">Giovanni Ferrero</h2>
-          <p class="subheading"><em>Here's $15 million. Call it a Kinder surprise.</em></p>
-          <img data-target="#ferrero" src="chocolate_man.jpg">
-          <p class="content">You probably grew up reading of Willy Wonka and his chocolate factory, but guess what? He actually lives in Italy.
-
-            <br><br>Giovanni Ferrero built his sweet empire one kinder egg at a time and is now the richest man in Italy. With a net worth estimated at $24.6 billion he is 32° in global ranks. Clearly proof that people around the world eat too much
-            Nutella every day.
-
-            <br><br>When his country unexpectedly became one of the world’s COVID-19 epicenters Ferrero stepped up. Through the Ferrero Foundation €10 million (equivalent to $10.8 million) were donated to the National special commission that had been
-            set up to face the local emergency.
-
-            <br><br>His efforts didn’t stop there. €5 million were donated to the hospital of Alba-Bra, in Verduno, which serves the area where Ferrero’s HQ is located. This became a COVID-dedicated hospital in the north west region of Italy, one of
-            the areas that was affected the most by the pandemic. In line with his secretive and reserved character, he didn’t publicize these efforts widely.
-
-            <br><br>Nonetheless, when at Easter Ferrero found a way to warm everyone’s hearts word spread quickly. Over 220 thousand Kinder eggs were donated across the Italian peninsula to doctors, hospital workers and civil protection operators.
-          </p>
-          <p class="content financials">
-            Estimated contribution: At least $15 million.<br><br>
-            Net Worth: $24.5 billion
-          </p>
-        </div>
-
-        <div class="container output" id="elonmusk">
-          <a class='fa fa-close close'></a>
-          <h2 class="minititle">Elon Musk</h2>
-          <p class="subheading"><em>Coronavirus is stupid but it's finally making me soluble!</em></p>
-          <img data-target="#elonmusk" src="elon_musk.jpg">
-          <p class="content">TK</p>
-          <p class="content financials">
-            Estimated contribution: TK<br><br>
-            Net Worth: TK
-          </p>
-        </div>
-
+      <div class="container output" id="jeffbezos">
+        <a class='fa fa-close close'></a>
+        <h2 class="minititle">Jeff Bezos</h2>
+        <p class="subheading"><em>Hmm, how can this make me richer?"</em></p>
+        <img data-target="#jeffbezos" src="img/bezos.jpg">
+        <p class="content">Jeff Bezos gave money, but also managed to come off as more evil by treating Amazon workers poorly.</p>
+        <p class="content financials">
+          Estimated contribution: $100 million to food banks<br><br>
+          Net Worth: ~ $100 billon
+        </p>
+        <p class="content source">
+          Source: <a href="https://www.inc.com/don-reisinger/why-bill-gates-is-business-worlds-coronavirus-leader.html">Inc</a>
+        </p>
       </div>
+
+      <div class="container output" id="bloomberg">
+        <a class='fa fa-close close'></a>
+        <h2 class="minititle">Michael Bloomberg</h2>
+        <p class="subheading"><em>Remember when I was running for President? No? Good.</em></p>
+        <img data-target="#bloomberg" src="img/bloomberg.jpg">
+        <p class="content">Michael Bloomberg disappeared after talking about how he'd do 'whatever it takes' to...get himself elected.</p>
+        <p class="content financials">
+          Estimated contribution: $46 million <br><br>
+          Net Worth: ~ $50 billion
+        </p>
+        <p class="content source">
+          Source: <a href="https://www.inc.com/don-reisinger/why-bill-gates-is-business-worlds-coronavirus-leader.html">Inc</a>
+        </p>
+      </div>
+
+      <div class="container output" id="charleskoch">
+        <a class='fa fa-close close'></a>
+        <h2 class="minititle">Charles Koch</h2>
+        <p class="subheading"><em>Freedom? Freedom means making me money.</em></p>
+        <img src="img/charleskoch.jpg">
+        <p class="content">Who was the most surprised by an international pandemic?<br><br>
+
+          Charles Koch would be a safe bet, if only because the man has spent so long trying to defund the CDC. In 2018, Koch’s Americans For Prosperity lobbied for $1 billion in cuts to the CDC. They argued the organization's funding had grown
+          significantly in 15 years, and that its public health services were ‘duplicative’.<br><br>
+
+          When Covid-19 hit, the AFP then began advocating against stay-at-home orders across the country. In several statements, the group called the orders the “wrong approach” and that “all businesses are essential.” That advice contradicts
+          medical experts at the top, and yet despite that, some say that languages has found a receptive ear in the president. Trump has also publicly toyed with the idea of reopening.<br><br>
+
+          At a net worth of 40 billion, Charles Koch’s influence is massive. The AFP is just one arm of his network that is mixed up in the coronavirus response. Koch industries employs over 130,000 workers. Koch also owns Georgia-Pacific, a
+          toilet-paper producer - sorry, “bath tissue” - among other things. It also owns Phillips Medisize, a medical device producer that makes test kits. In a statement, the company said they would be ‘transforming production lines in order to
+          meet the growing demand for life saving medical devices.”<br><br>
+
+          So Koch is either innovating his way through an economic collapse, or simply positioning himself to hold all the cards when the federal demand for test kits soars.<br><br>
+
+          One of Koch’s orgs, Stand Together, has announced that they are donating a total of $5 million dollars directly to families in sums of $500 each. It’s also donating over $5 million to community-based nonprofits.<br><br>
+
+          Notably, a small amount of that pot has come from Koch’s own coffers. Most of it is raised publicly.<br><br>
+
+          Recently, the AFP has broken with former tea-party groups who’ve supported shutdown protests across the country. The decision not to take part in shutdown protests was notable. Americans for Prosperity CEO Emily Seidel said she “did not
+          believe rejecting the advice of public health experts made sense.”<br><br>
+
+          The same health experts Koch has long tried to defund.<br><br>
+        </p>
+        <p class="content financials">
+          Estimated contribution: TK<br><br>
+          Net Worth: TK
+        </p>
+        <p class="content source">
+          Source: <a href="https://www.inc.com/don-reisinger/why-bill-gates-is-business-worlds-coronavirus-leader.html">Inc</a>
+        </p>
+      </div>
+
+      <div class="container output" id="ferrero">
+        <a class='fa fa-close close'></a>
+        <h2 class="minititle">Giovanni Ferrero</h2>
+        <p class="subheading"><em>Here's $15 million. Call it a Kinder surprise.</em></p>
+        <img data-target="#ferrero" src="img/chocolate_man.jpg">
+        <p class="content">You probably grew up reading of Willy Wonka and his chocolate factory, but guess what? He actually lives in Italy.
+
+          <br><br>Giovanni Ferrero built his sweet empire one kinder egg at a time and is now the richest man in Italy. With a net worth estimated at $24.6 billion he is 32° in global ranks. Clearly proof that people around the world eat too much
+          Nutella every day.
+
+          <br><br>When his country unexpectedly became one of the world’s COVID-19 epicenters Ferrero stepped up. Through the Ferrero Foundation €10 million (equivalent to $10.8 million) were donated to the National special commission that had been
+          set up to face the local emergency.
+
+          <br><br>His efforts didn’t stop there. €5 million were donated to the hospital of Alba-Bra, in Verduno, which serves the area where Ferrero’s HQ is located. This became a COVID-dedicated hospital in the north west region of Italy, one of
+          the areas that was affected the most by the pandemic. In line with his secretive and reserved character, he didn’t publicize these efforts widely.
+
+          <br><br>Nonetheless, when at Easter Ferrero found a way to warm everyone’s hearts word spread quickly. Over 220 thousand Kinder eggs were donated across the Italian peninsula to doctors, hospital workers and civil protection operators.
+        </p>
+        <p class="content financials">
+          Estimated contribution: At least $15 million.<br><br>
+          Net Worth: $24.5 billion
+        </p>
+        <p class="content source">
+          Source: <a href="https://www.inc.com/don-reisinger/why-bill-gates-is-business-worlds-coronavirus-leader.html">Inc</a>
+        </p>
+      </div>
+
+      <div class="container output" id="elonmusk">
+        <a class='fa fa-close close'></a>
+        <h2 class="minititle">Elon Musk</h2>
+        <p class="subheading"><em>Is this pandemic ruining anyone else's moment?</em></p>
+        <img data-target="#elonmusk" src="img/musk2.jpg">
+        <p class="content">One thing Elon Musk knows how to do is make headlines.<br><br>
+          In March, he did it with good news. Tesla was finally making money, thanks to the new Model Y. Its stock value had more than doubled, and production lines were booming its Fremont, California factory.
+          <br><br>But by May, Musk was publicly fuming at the lockdown measures which shut down his factory and with it all of his newfound momentum.
+          <br><br>"FREE AMERICA NOW", Musk tweeted. He then called stay-at-home measures 'fascist', on an earnings call with investors. On May 11th, he reopened his factories against California lockdown orders, tweeting that he should be arrested,
+          were county authorities to shut the
+          factory down.</p>
+        <p class="content financials">
+          Estimated contribution: Less than $100,000<br><br>
+          Net Worth: ~ $32 billion
+        </p>
+        <p class="content source">
+          Source: <a href="https://www.cnn.com/2020/04/17/tech/elon-musk-ventilators-california/index.html">CNN</a>
+        </p>
+      </div>
+
+    </div>
+
+    </div>
+    <div class="container center">
+      <div class="bottom">
+        <p>Check out our other projects</p><img src="img/airl.png"><img src="img/twit.png"><img src="img/calc.png"><img src="img/home.png">
+      </div>
+
     </div>
   </body>
   <!-- the jQuery library. You need this to be able to use jQuery ($) -->
